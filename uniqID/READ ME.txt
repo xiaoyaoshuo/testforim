@@ -1,0 +1,2 @@
+调用CreateID给出  serverID  and  clientID
+第一期任务完成1台服务器，所以serverID =0
