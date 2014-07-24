@@ -1,4 +1,4 @@
-package total //先用main  搞定后改成uniqID
+package uniqID //先用main  搞定后改成uniqID
 
 var (
 	num = make(chan uint64) //通道传递 总数

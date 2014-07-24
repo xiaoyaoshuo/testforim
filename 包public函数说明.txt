@@ -1,0 +1,9 @@
+
+/////////////////////////////////////////////////////////////////
+//uniqID  
+////////////////////////////////////////////////////////////////
+total.go    外包可以调用 GetTotal()int64{}    返回登陆总数
+uniqID.go   外包可以调用 GetServerID（）int{}  创建一个新的server并返回其serverID
+			 GetClientID（）int{}  创建一个新的client并返回其clientID
+			 DelAServerID（）      当销毁一个server需要对应销毁其ID						 DelAClientID（）      当退出一个客户端的时候需要对应销毁其ID
+                        注意  当GetClientID 返回0  表示当前服务器下客户端已达到最大数量
