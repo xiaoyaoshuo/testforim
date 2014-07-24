@@ -1,26 +1,26 @@
-package£ºpackage²ã£¬Íê³Épackage²ãµÄ¶¨ÒåÓë»ù´¡¹¦ÄÜÊµÏÖ
-session£ºsession²ã£¬Íê³Ésession²ãµÄ¶¨ÒåÓë»ù´¡¹¦ÄÜÊµÏÖ
-server£ºserver²ã£¬Íê³Ésever²ãµÄ¶¨ÒåÓë»ù´¡¹¦ÄÜµÄÊµÏÖ
-s2c£º·þÎñÆ÷Óë¿Í»§¶ËÖ®¼äµÄÍ¨ÐÅ£¬·þÎñÆ÷Ò»Ö±¼àÌý£¬¿Í»§¶ËÒ»Æô¶¯Ò²Ò»Ö±¼àÌý
-s2cÍê³É c2cÍ¨ÐÅ
+packageï¼špackageå±‚ï¼Œå®Œæˆpackageå±‚çš„å®šä¹‰ä¸ŽåŸºç¡€åŠŸèƒ½å®žçŽ°
+sessionï¼šsessionå±‚ï¼Œå®Œæˆsessionå±‚çš„å®šä¹‰ä¸ŽåŸºç¡€åŠŸèƒ½å®žçŽ°
+serverï¼šserverå±‚ï¼Œå®Œæˆseverå±‚çš„å®šä¹‰ä¸ŽåŸºç¡€åŠŸèƒ½çš„å®žçŽ°
+s2cï¼šæœåŠ¡å™¨ä¸Žå®¢æˆ·ç«¯ä¹‹é—´çš„é€šä¿¡ï¼ŒæœåŠ¡å™¨ä¸€ç›´ç›‘å¬ï¼Œå®¢æˆ·ç«¯ä¸€å¯åŠ¨ä¹Ÿä¸€ç›´ç›‘å¬
+s2cå®Œæˆ c2cé€šä¿¡
 
-s2s£º·þÎñÆ÷Óë·þÎñÆ÷Ö®¼äµÄÍ¨ÐÅ£¬Æô¶¯¼àÌý£¬´«µÝpackage
-client£º¿Í»§¶Ë£¬¼àÌý£¬·¢ËÍ°üµÈ
+s2sï¼šæœåŠ¡å™¨ä¸ŽæœåŠ¡å™¨ä¹‹é—´çš„é€šä¿¡ï¼Œå¯åŠ¨ç›‘å¬ï¼Œä¼ é€’package
+clientï¼šå®¢æˆ·ç«¯ï¼Œç›‘å¬ï¼Œå‘é€åŒ…ç­‰
 
-£¿£¿ÐèÒª¶ÀÁ¢²ã´Î£¿Ò²¾ÍÊÇserver ´«µÝsession£¬session´«µÝpackage£¿ Õâ¸öÓ¦¸ÃÊÇ±ØÐëµÄ
+ï¼Ÿï¼Ÿéœ€è¦ç‹¬ç«‹å±‚æ¬¡ï¼Ÿä¹Ÿå°±æ˜¯server ä¼ é€’sessionï¼Œsessionä¼ é€’packageï¼Ÿ è¿™ä¸ªåº”è¯¥æ˜¯å¿…é¡»çš„
 
 
-testforim  ÊÇÖ÷³ÌÐò£¬ÀïÃæÍê³ÉÒÔÏÂ¹¦ÄÜ£º
-×¢£ºµÚÒ»ÆÚÖ»¿¼ÂÇÒ»¶ÔÒ»Í¨ÐÅ£¡£¡£¡
-1.Ò»Ì¨·þÎñÆ÷Á¬½Ó20000¸ö¿Í»§¶Ë
-2.20000¸ö¿Í»§¶ËÄÚµÄ Ò»¶ÔÒ»  Í¨ÐÅ 
-3.20000¸ö¿Í»§¶ËÄÚµÄÈºÁÄ
-4.·þÎñÆ÷Óë·þÎñÆ÷Ö®¼äµÄÍ¨ÐÅ
-5.²»Í¬·þÎñÆ÷ÏÂµÄ¿Í»§¶ËÖ®¼äµÄÒ»¶ÔÒ»Í¨ÐÅ
-6.²»Í¬¿Í»§¶ËÏÂµÄ¿Í»§¶ËÖ®¼äµÄÈºÁÄ
-£¿£¿£¿ÈºÁÄÊÇ²»ÊÇÓ¦¸Ã°Ñ3,6ÕûºÏÔÚÒ»Æð£¿
+testforim  æ˜¯ä¸»ç¨‹åºï¼Œé‡Œé¢å®Œæˆä»¥ä¸‹åŠŸèƒ½ï¼š
+æ³¨ï¼šç¬¬ä¸€æœŸåªè€ƒè™‘ä¸€å¯¹ä¸€é€šä¿¡ï¼ï¼ï¼
+1.ä¸€å°æœåŠ¡å™¨è¿žæŽ¥20000ä¸ªå®¢æˆ·ç«¯
+2.20000ä¸ªå®¢æˆ·ç«¯å†…çš„ ä¸€å¯¹ä¸€  é€šä¿¡ 
+3.20000ä¸ªå®¢æˆ·ç«¯å†…çš„ç¾¤èŠ
+4.æœåŠ¡å™¨ä¸ŽæœåŠ¡å™¨ä¹‹é—´çš„é€šä¿¡
+5.ä¸åŒæœåŠ¡å™¨ä¸‹çš„å®¢æˆ·ç«¯ä¹‹é—´çš„ä¸€å¯¹ä¸€é€šä¿¡
+6.ä¸åŒå®¢æˆ·ç«¯ä¸‹çš„å®¢æˆ·ç«¯ä¹‹é—´çš„ç¾¤èŠ
+ï¼Ÿï¼Ÿï¼Ÿç¾¤èŠæ˜¯ä¸æ˜¯åº”è¯¥æŠŠ3,6æ•´åˆåœ¨ä¸€èµ·ï¼Ÿ
 
-ÒÔÉÏÍ¨ÐÅÄÚÈÝÍ¨¹ý´«µÝpakage£¬tpye¡¾0¡¿ÎªbyteÍ¨ÐÅ  Í¼Æ¬£¬ÉùÒôµÈÆäËûtypeºóÃæÔÙ¿¼ÂÇ
+ä»¥ä¸Šé€šä¿¡å†…å®¹é€šè¿‡ä¼ é€’pakageï¼Œtpyeã€0ã€‘ä¸ºbyteé€šä¿¡  å›¾ç‰‡ï¼Œå£°éŸ³ç­‰å…¶ä»–typeåŽé¢å†è€ƒè™‘
 
-±¾IM·ÖÎªÈý¸ö²ã´Î£ºsever²ã   session²ã   package²ã
-×¢£º¿ÉÄÜÐèÒªschedule²ã£¨µ÷¶ÈÓÃ£©
+æœ¬IMåˆ†ä¸ºä¸‰ä¸ªå±‚æ¬¡ï¼šseverå±‚   sessionå±‚   packageå±‚
+æ³¨ï¼šå¯èƒ½éœ€è¦scheduleå±‚ï¼ˆè°ƒåº¦ç”¨ï¼‰

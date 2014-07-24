@@ -1,23 +1,23 @@
-total.go    Íâ°ü¿ÉÒÔµ÷ÓÃ GetTotal()int64{}    ·µ»ØµÇÂ½×ÜÊý
-uniqID.go   Íâ°ü¿ÉÒÔµ÷ÓÃ GetServerID£¨£©int{}  ´´½¨Ò»¸öÐÂµÄserver²¢·µ»ØÆäserverID
-			 GetClientID£¨£©int{}  ´´½¨Ò»¸öÐÂµÄclient²¢·µ»ØÆäclientID
-			 DelAServerID£¨£©      µ±Ïú»ÙÒ»¸öserverÐèÒª¶ÔÓ¦Ïú»ÙÆäID						 DelAClientID£¨£©      µ±ÍË³öÒ»¸ö¿Í»§¶ËµÄÊ±ºòÐèÒª¶ÔÓ¦Ïú»ÙÆäID
-                        ×¢Òâ  µ±GetClientID ·µ»Ø0  ±íÊ¾µ±Ç°·þÎñÆ÷ÏÂ¿Í»§¶ËÒÑ´ïµ½×î´óÊýÁ¿	
+total.go    å¤–åŒ…å¯ä»¥è°ƒç”¨ GetTotal()int64{}    è¿”å›žç™»é™†æ€»æ•°
+uniqID.go   å¤–åŒ…å¯ä»¥è°ƒç”¨ GetServerIDï¼ˆï¼‰int{}  åˆ›å»ºä¸€ä¸ªæ–°çš„serverå¹¶è¿”å›žå…¶serverID
+			 GetClientIDï¼ˆï¼‰int{}  åˆ›å»ºä¸€ä¸ªæ–°çš„clientå¹¶è¿”å›žå…¶clientID
+			 DelAServerIDï¼ˆï¼‰      å½“é”€æ¯ä¸€ä¸ªserveréœ€è¦å¯¹åº”é”€æ¯å…¶ID						 DelAClientIDï¼ˆï¼‰      å½“é€€å‡ºä¸€ä¸ªå®¢æˆ·ç«¯çš„æ—¶å€™éœ€è¦å¯¹åº”é”€æ¯å…¶ID
+                        æ³¨æ„  å½“GetClientID è¿”å›ž0  è¡¨ç¤ºå½“å‰æœåŠ¡å™¨ä¸‹å®¢æˆ·ç«¯å·²è¾¾åˆ°æœ€å¤§æ•°é‡	
 
 
-µ÷ÓÃCreateID¸ø³ö  serverID  and  clientID
-µÚÒ»ÆÚÈÎÎñÍê³É1Ì¨·þÎñÆ÷£¬ËùÒÔserverID =0
-·ÖÎö£º×îÖÕÄ¿±êÊÇ×ö³É°ÙÍò¼¶±ðµÄÍ¨ÐÅapp
-Èç¹ûÍ¨µÀ´«µÝUniqID½á¹¹Êý¾Ý Ã¿´Î¶¼ÒªÈ¡³ö·þÎñÆ÷IDºÍ¿Í»§¶ËID
+è°ƒç”¨CreateIDç»™å‡º  serverID  and  clientID
+ç¬¬ä¸€æœŸä»»åŠ¡å®Œæˆ1å°æœåŠ¡å™¨ï¼Œæ‰€ä»¥serverID =0
+åˆ†æžï¼šæœ€ç»ˆç›®æ ‡æ˜¯åšæˆç™¾ä¸‡çº§åˆ«çš„é€šä¿¡app
+å¦‚æžœé€šé“ä¼ é€’UniqIDç»“æž„æ•°æ® æ¯æ¬¡éƒ½è¦å–å‡ºæœåŠ¡å™¨IDå’Œå®¢æˆ·ç«¯ID
 type UniqID struct {
 	var serverID int 
 	var clientID int 
 }
-var (                         //Í¨µÀ´«µÝUniqID½á¹¹Êý¾Ý  °üÀ¨serverID ºÍclientID
+var (                         //é€šé“ä¼ é€’UniqIDç»“æž„æ•°æ®  åŒ…æ‹¬serverID å’ŒclientID
 	num = make(chan UniqID)
 )
 
-int32  ÄÜ´ïµ½42ÒÚ  Èç¹ûÒ»¸ö·þÎñÆ÷ÏÂ·½ÓÐÊýÍò¸ö¿Í»§¶ËÖÁÊýÊ®Íò¸ö¿Í»§¶Ë£¬°ÙÍòÎ»ÒÔÉÏ¿ÉÒÔÈÝÄÉ4294¸ö·þÎñÆ÷  £¨Èç¹û·þÎñÆ÷ÏÂÖ»µ½ÊýÍò¸ö£¬Ê®ÍòÎ»ÒÔÉÏÊÇ·þÎñÆ÷±àºÅ£¬¿ÉÒÔ´ïµ½ËÄÍò¶à£©
-ÕâÑùÊÇ¹»ÓÃµÄ£¬²»¹»ÓÃ¿¼ÂÇint64 
+int32  èƒ½è¾¾åˆ°42äº¿  å¦‚æžœä¸€ä¸ªæœåŠ¡å™¨ä¸‹æ–¹æœ‰æ•°ä¸‡ä¸ªå®¢æˆ·ç«¯è‡³æ•°åä¸‡ä¸ªå®¢æˆ·ç«¯ï¼Œç™¾ä¸‡ä½ä»¥ä¸Šå¯ä»¥å®¹çº³4294ä¸ªæœåŠ¡å™¨  ï¼ˆå¦‚æžœæœåŠ¡å™¨ä¸‹åªåˆ°æ•°ä¸‡ä¸ªï¼Œåä¸‡ä½ä»¥ä¸Šæ˜¯æœåŠ¡å™¨ç¼–å·ï¼Œå¯ä»¥è¾¾åˆ°å››ä¸‡å¤šï¼‰
+è¿™æ ·æ˜¯å¤Ÿç”¨çš„ï¼Œä¸å¤Ÿç”¨è€ƒè™‘int64 
 
-ÔÝÊ±¾ö¶¨°ÙÍòÎ»ÒÔÉÏ´æ´¢·þÎñÆ÷±àºÅ 
+æš‚æ—¶å†³å®šç™¾ä¸‡ä½ä»¥ä¸Šå­˜å‚¨æœåŠ¡å™¨ç¼–å· 

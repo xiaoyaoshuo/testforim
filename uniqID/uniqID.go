@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-const maxclient = 20000 //第一期任务每个服务器下20000台机子，用编号为0服务器测试
+const Maxclient = 20000 //第一期任务每个服务器下20000台机子，用编号为0服务器测试
 const firstserver = 100000
 
 var totalID int // 这个ID 前面是serverID（通过%10万取得）   后面是clientID
@@ -25,7 +25,7 @@ func GetServerID() int {
 }
 
 func GetClientID() int {
-	if (totalID % firstserver) < maxclient {
+	if (totalID % firstserver) < Maxclient {
 		totalID = totalID + 1
 		return int(totalID % firstserver)
 	} else {
