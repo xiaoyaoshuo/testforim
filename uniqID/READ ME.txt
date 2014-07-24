@@ -1,2 +1,21 @@
+total  统计客户端登陆总次数
+uniqID  返回服务器ID 和客户ID
+
 调用CreateID给出  serverID  and  clientID
 第一期任务完成1台服务器，所以serverID =0
+分析：最终目标是做成百万级别的通信app
+如果通道传递UniqID结构数据 每次都要取出服务器ID和客户端ID
+type UniqID struct {
+	var serverID int 
+	var clientID int 
+}
+var (                         //通道传递UniqID结构数据  包括serverID 和clientID
+	num = make(chan UniqID)
+)
+
+int32  能达到42亿  如果一个服务器下方有数万个客户端至数十万个客户端，百万位以上可以容纳4294个服务器  （如果服务器下只到数万个，十万位以上是服务器编号，可以达到四万多）
+这样是够用的，不够用考虑int64 
+
+暂时决定百万位以上存储服务器编号 
+
+
